@@ -2,19 +2,28 @@
 
 /* Global styles*/
 
-/*TO DO: Styles will add in class!*/
+body {
+     font-family: Arial, sans-serif; margin: 0; padding: 0; 
+}
+
+header, nav, main, footer { 
+    padding: 1rem; 
+}
 
 /* MEDIA QUERY (medium) */
 @media screen and (min-width: 600px){
-    /*TO DO: Styles will add in class*/
+    nav ul { display: flex; gap: 1rem; }
+    main {background: yellow;}
 }
 
 /* MEDIA QUERIES (LARGE) */
 @media screen and (min-width: 900px){
-    /*TO DO: Styles will add in class*/
+    body { max-width: 900px; margin: auto; }
+    h1 { font-size: 3rem; }
+    main {background: blue;}
 }
 
 /* MEDIA QUERY (xl) */
 @media screen and (min-width: 1200px) {
-    /*TO DO: Styles will add in class*/
+    main {background: red;}
 }
