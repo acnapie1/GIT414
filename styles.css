@@ -9,7 +9,37 @@ body {
 header, nav, main, footer { 
     padding: 1rem; 
 }
-
+main, header{
+    display: flex;
+    justify-content: center;  
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem, 4rem;
+}
+nav li:after{
+    content: "|";
+    padding: 25px;
+}
+nav li:last-child:after{
+     content: '';
+}
+nav li{
+    gap: 25px;
+}
+h1{
+    font-weight: bold;
+}
+footer{
+    text-align: center;
+}
 /* MEDIA QUERY (medium) */
 @media screen and (min-width: 600px){
     nav ul { display: flex; gap: 1rem; }
